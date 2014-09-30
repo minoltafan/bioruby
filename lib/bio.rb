@@ -86,7 +86,7 @@ module Bio
 
   autoload :EMBL,           'bio/db/embl/embl'
   autoload :UniProtKB,      'bio/db/embl/uniprotkb'
-
+  
   ## aliases of Bio::UniProtKB
   autoload :SPTR,           'bio/db/embl/sptr'
   autoload :UniProt,        'bio/db/embl/uniprot'
@@ -94,7 +94,8 @@ module Bio
   ## (deprecated) Bio::TrEMBL, Bio::SwissProt
   autoload :TrEMBL,         'bio/db/embl/trembl'
   autoload :SwissProt,      'bio/db/embl/swissprot'
-
+  
+  
   ## KEGG
 
   class KEGG
@@ -199,7 +200,9 @@ module Bio
   autoload :TogoWS,       'bio/io/togows'
 
   ### Applications
-
+  ## OUR STRIDE MODULE
+  autoload :Stride,	'bio/appl/stride/report'
+  
   autoload :Fasta,          'bio/appl/fasta'
   ## below are described in bio/appl/fasta.rb
   #class Fasta
@@ -267,6 +270,7 @@ module Bio
   
   autoload :Spidey,         'bio/appl/spidey/report'
   autoload :Blat,           'bio/appl/blat/report'
+
   
   module GCG
     autoload :Msf,          'bio/appl/gcg/msf'
